@@ -1,11 +1,17 @@
-import { Game} from '/js/game.js';
+import { Scene1} from '/js/escenes/scene1.js';
+import { Start} from '/js/escenes/start.js';
+import { Scene2} from '/js/escenes/scene2.js';
+import { GameOver} from '/js/escenes/GameOver.js';
+
+console.log('test');
 
 const config = {
     type: Phaser.AUTO,
     parent: 'game',
     width: 800,
-    heigth: 240,
-    scene: [Game],
+    heigth: 600,
+    scene: [Start,Scene1,Scene2,GameOver],
+
     physics: {
         default: 'arcade',
         arcade: {
@@ -20,3 +26,4 @@ const config = {
 }
 
 var game = new Phaser.Game(config);
+

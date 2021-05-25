@@ -1,0 +1,242 @@
+{
+    "frames": [
+        {
+            "filename": "golem_01_walking_0",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_12",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 480
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_13",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 960
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_1",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 1440
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_15",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 1920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_2",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 2400
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_3",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 2880
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_4",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 3360
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_16",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 3840
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_5",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 4320
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_6",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 4800
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_7",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 5280
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_8",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 5760
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_9",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 6240
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_10",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 6720
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_14",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 7200
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_11",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 7680
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "golem_01_walking_17",
+            "frame": {
+                "w": 720,
+                "h": 480,
+                "x": 0,
+                "y": 8160
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}
