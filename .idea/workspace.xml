@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92414db1-b30d-4ac3-886e-7f43bfe7e32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/bitmapFonts/desyrel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bitmapFonts/desyrel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/aboutme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/congratulations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/explosion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/explosion2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/musicOFF.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/musicOn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/win.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/escenes/Win.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tilemaps/mapa_level1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tilemaps/mapa_level1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tilemaps/test.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tilemaps/test.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/Enemy.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Enemy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/Score.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Score.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/LiveCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/LiveCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Object.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Object.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/escenes/scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/escenes/scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/scene2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/escenes/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/start.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +76,7 @@
       <workItem from="1622047335103" duration="1111000" />
       <workItem from="1622121977639" duration="600000" />
       <workItem from="1622125469331" duration="13335000" />
-      <workItem from="1622150181018" duration="5504000" />
+      <workItem from="1622150181018" duration="7861000" />
     </task>
     <servers />
   </component>
@@ -135,11 +120,11 @@
     </state>
     <state x="1971" y="214" key="run.anything.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1622137100263" />
     <state x="2864" y="342" key="run.anything.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621697249604" />
-    <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup" timestamp="1621898646779">
+    <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup" timestamp="1622157973510">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="1823" y="212" width="672" height="678" key="search.everywhere.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1621345139278" />
-    <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621898646779" />
+    <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1622157973510" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

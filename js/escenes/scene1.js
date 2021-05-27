@@ -104,12 +104,18 @@ export class Scene1 extends Phaser.Scene {
         //Score and Counter
         this.score.create();
         this.liveCounter.create();
+
     }
 
     update()
     {
+
+
+
+
+
         this.enemy.update(0,10);
-        this.player.update();
+        this.player.update(this.pad1);
         if(this.player.y>900) this.player.playerDrop(this);
 
     }

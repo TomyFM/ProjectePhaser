@@ -33,6 +33,7 @@ export class Start extends Phaser.Scene {
         this.music.play(musicConfig);
 
 
+
         const backgroundImage = this.add.image(-100, -100,'background').setOrigin(0, 0);
         const startImage = this.add.image(300,250,'start').setOrigin(0,0);
         const settings = this.add.image(100,500,'settings').setOrigin(0,0).setScale(0.10,0.10);
@@ -92,7 +93,6 @@ export class Start extends Phaser.Scene {
 
         musicOff.on('pointerdown', () => {
             soundSetting=!soundSetting;
-            console.log(soundSetting)
             if(soundSetting) {
                 musicOn.setVisible(soundSetting);
                 musicOff.setVisible(!soundSetting);
