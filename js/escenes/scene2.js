@@ -18,6 +18,8 @@ export class Scene2 extends Phaser.Scene {
         this.playerGetKey=false;
         this.liveCounter=new LiveCounter(this, data.vides);
         this.score = new Score(this,data.score);
+        this.soundSetting = data.soundSetting;
+        this.dificil = data.dificil
     }
 
     preload() {
@@ -35,6 +37,7 @@ export class Scene2 extends Phaser.Scene {
         this.load.tilemapTiledJSON('map2', 'assets/tilemaps/mapa_level2.json');
         this.load.image('volca', 'assets/images/bg_volca.png');
         this.load.atlas('player', 'assets/images/kenney_player.png','assets/images/kenney_player_atlas.json');
+
     }
 
     create() {
@@ -53,7 +56,7 @@ export class Scene2 extends Phaser.Scene {
             loop: true,
             delay: 1
         }
-        this.music.play(musicConfig);
+        if(this.soundSetting) this.music.play(musicConfig);
 
         //Add Images
         const backgroundImage = this.add.image(0, 0,'volca').setOrigin(0, 0);
@@ -66,12 +69,13 @@ export class Scene2 extends Phaser.Scene {
 
         //Add Objects
         this.porta2 = new Object(this, map,'portaclau','portaClau').getObjects();
-        this.spikes = new Object(this, map,'spikes','spike').getObjects();
+        if(this.dificil) this.spikes = new Object(this, map,'spikes','spike').getObjects();
         this.diamants = new Object(this, map,'diamants','diamant').getObjects();
         this.clau = new Object(this, map,'clau','clau').getObjects();
         this.player = new Player(this,50,300);
         this.enemy = new Enemy(this, 500, 500);
         this.enemy2 = new Enemy(this, 3200, 256);
+
 
         //Animation
         animacio(this);
@@ -84,7 +88,7 @@ export class Scene2 extends Phaser.Scene {
 
         this.physics.add.collider(this.player, terra);
         terra.setCollisionByProperty({collision: true});
-        this.physics.add.collider(this.player, this.spikes, playerHit, null, this);
+        if(this.dificil) this.physics.add.collider(this.player, this.spikes, playerHit, null, this);
         this.physics.add.overlap(this.player, this.diamants, collectDiamants, null, this);
         this.physics.add.overlap(this.player, this.porta2, final, null, this);
         this.physics.add.overlap(this.player, this.clau, takeclau, null, this);
@@ -93,9 +97,15 @@ export class Scene2 extends Phaser.Scene {
         this.physics.add.collider(this.player, this.enemy, kill, null, this);
         this.physics.add.collider(this.player, this.enemy2, kill, null, this);
 
+        this.physics.world.bounds.x = 0;
+        this.physics.world.bounds.y = 0;
+        this.physics.world.bounds.width = 3584;
+        this.physics.world.bounds.height = 1200;
+
         //Score and Counter
         this.score.create();
         this.liveCounter.create();
+
 
     }
 
@@ -112,24 +122,6 @@ export class Scene2 extends Phaser.Scene {
 
 }
 
-// function playerHit(player, spike) {
-//     player.setVelocity(0, 0);
-//     player.setX(50);
-//     player.setY(300);
-//     player.play('idle', true);
-//     player.setAlpha(0);
-//     let tw = this.tweens.add({
-//         targets: player,
-//         alpha: 1,
-//         duration: 100,
-//         ease: 'Linear',
-//         repeat: 5,
-//     });
-//
-//     this.liveCounter.liveLost();
-//     this.cameras.main.shake(500);
-// }
-
 function collectDiamants (player, diamant)
 {
     diamant.disableBody(true, true);
@@ -141,7 +133,12 @@ function collectDiamants (player, diamant)
 function final ()
 {
     if(this.playerGetKey){
-        console.log('FINAL');
+        this.music.stop();
+        this.scene.start('Win',{
+            vides: this.liveCounter.getLives(),
+            score: this.score.getScore(),
+            soundSetting: this.soundSetting
+        })
     }
 
 }
@@ -155,6 +152,24 @@ function kill(player, enemy){
     if(player.body.touching.down) {
         enemy.destroy();
         this.golemDeath.play();
+        this.score.incrementScore(true);
+
+        this.anims.create({
+            key: 'explosionAnimated',
+            frames: 'explosion',
+            frameRate: 15,
+            repeat: 0
+        });
+
+        let explosion = this.add.sprite(enemy.x,enemy.y,'explosion');
+        explosion.setScale(0.7,0.7);
+        explosion.play('explosionAnimated');
+        explosion.once('animationcomplete', () => {
+            explosion.destroy();
+        })
+
+
+
     }else player.playerDrop(this);
 
 }

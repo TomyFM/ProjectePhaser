@@ -13,10 +13,12 @@ export class Scene1 extends Phaser.Scene {
         super({key: 'Game'});
     }
 
-    init()
+    init(data)
     {
         this.liveCounter=new LiveCounter(this, 4);
         this.score = new Score(this,0);
+        this.soundSetting = data.soundSetting
+        this.dificil = data.dificil
 
     }
 
@@ -36,6 +38,10 @@ export class Scene1 extends Phaser.Scene {
         this.load.image('background', 'assets/images/background.png');
         this.load.atlas('player', 'assets/images/kenney_player.png','assets/images/kenney_player_atlas.json')
         this.load.atlas('enemy', 'assets/images/golem.png','assets/images/golem.json')
+
+        this.load.spritesheet('explosion', 'assets/images/explosion.png',{ frameWidth: 256, frameHeight: 256 })
+        this.load.bitmapFont('desyrel', 'assets/bitmapFonts/desyrel.png', 'assets/bitmapFonts/desyrel.xml');
+
     }
 
     create()
@@ -54,7 +60,7 @@ export class Scene1 extends Phaser.Scene {
             loop: true,
             delay: 1
         }
-        this.music.play(musicConfig);
+        if(this.soundSetting) this.music.play(musicConfig);
 
         //Add Images
         const backgroundImage = this.add.image(0, 0,'background').setOrigin(0, 0);
@@ -66,10 +72,18 @@ export class Scene1 extends Phaser.Scene {
 
         //Add Objects
         this.porta = new Object(this, map,'porta','porta').getObjects();
-        this.spikes = new Object(this, map,'spikes','spike').getObjects();
+        if(this.dificil) this.spikes = new Object(this, map,'spikes','spike').getObjects();
+
         this.diamants = new Object(this, map,'diamants','diamant').getObjects();
+
+
         this.player = new Player(this,100,100);
         this.enemy = new Enemy(this, 600, 700);
+
+        this.physics.world.bounds.x = 0;
+        this.physics.world.bounds.y = 0;
+        this.physics.world.bounds.width = 3584;
+        this.physics.world.bounds.height = 1200;
 
         //Animation
         animacio(this);
@@ -81,7 +95,7 @@ export class Scene1 extends Phaser.Scene {
         terra.setCollisionByProperty({collision: true});
         this.physics.add.collider(this.player, terra);
         this.physics.add.collider(this.enemy, terra);
-        this.physics.add.collider(this.player, this.spikes, playerHit, null, this);
+        if(this.dificil) this.physics.add.collider(this.player, this.spikes, playerHit, null, this);
         this.physics.add.overlap(this.player, this.diamants, collectDiamants, null, this).name='collider';
         this.physics.add.collider(this.player, this.porta, porta, null, this);
         this.physics.add.collider(this.player, this.enemy, kill, null, this);
@@ -104,6 +118,22 @@ function kill(player, enemy){
     if(player.body.touching.down) {
         enemy.destroy();
         this.golemDeath.play();
+        this.score.incrementScore(true);
+
+        this.anims.create({
+            key: 'explosionAnimated',
+            frames: 'explosion',
+            frameRate: 15,
+            repeat: 0
+        });
+
+        let explosion = this.add.sprite(enemy.x,enemy.y,'explosion');
+        explosion.setScale(0.7,0.7);
+        explosion.play('explosionAnimated');
+        explosion.once('animationcomplete', () => {
+            explosion.destroy();
+        })
+
     }else player.playerDrop(this);
 
 }
@@ -137,6 +167,8 @@ function porta ()
     this.music.destroy();
     this.scene.start('Scene2',{
         vides: this.liveCounter.getLives(),
-        score: this.score.getScore()
+        score: this.score.getScore(),
+        soundSetting: this.soundSetting,
+        dificil: this.dificil
     })
 }

@@ -2,47 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92414db1-b30d-4ac3-886e-7f43bfe7e32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/bg_start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/clau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/cor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/diamant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/golem.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/golem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/golemDeath.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/golemDeath.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/phantom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/porta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portaClau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/start2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/volca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/collect.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/gameOver.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/level1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/menu.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/mort.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/musiclevels.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tilemaps/mapa_level1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/Enemy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/LiveCounter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/Object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/Player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/Score.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/escenes/GameOver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/escenes/scene1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/escenes/scene2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/escenes/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/funcions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bitmapFonts/desyrel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bitmapFonts/desyrel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/aboutme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/congratulations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/explosion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/explosion2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/musicOFF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/musicOn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sounds/win.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/escenes/Win.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/game_over.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/game_over.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/game_over2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tilemaps/mario_level_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tilemaps/mario_level_1.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tilesets/MarioLevel1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tilemaps/mapa_level1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tilemaps/mapa_level1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tilemaps/test.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tilemaps/test.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Enemy.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Enemy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Score.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Score.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/escenes/scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/scene1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/escenes/scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/scene2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/escenes/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/start.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +50,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/sounds" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/sounds" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets/bitmapFonts" />
+      <recent name="$PROJECT_DIR$/js/escenes" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/assets/tilesets" />
-      <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js/escenes" />
@@ -108,6 +88,10 @@
       <workItem from="1621694081389" duration="11231000" />
       <workItem from="1621761318581" duration="25517000" />
       <workItem from="1621843922329" duration="33123000" />
+      <workItem from="1622047335103" duration="1111000" />
+      <workItem from="1622121977639" duration="600000" />
+      <workItem from="1622125469331" duration="13335000" />
+      <workItem from="1622150181018" duration="5504000" />
     </task>
     <servers />
   </component>
@@ -115,19 +99,19 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2890" y="535" width="636" height="417" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621884330848">
+    <state x="2890" y="535" width="636" height="417" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622152884898">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2890" y="535" width="636" height="417" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621884330848" />
+    <state x="2890" y="535" width="636" height="417" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1622152884898" />
     <state x="2962" y="452" width="465" height="568" key="NewPhpClassDialog" timestamp="1621674118173">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2962" y="452" width="465" height="568" key="NewPhpClassDialog/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621674118173" />
-    <state x="72" y="0" width="1848" height="1080" key="dock-window-1" timestamp="1621852491035">
+    <state x="72" y="0" width="1848" height="1080" key="dock-window-1" timestamp="1622152224009">
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
     <state x="1210" y="40" width="973" height="856" key="dock-window-1/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1621605366316" />
-    <state x="72" y="0" width="1848" height="1080" key="dock-window-1/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621852491035" />
+    <state x="72" y="0" width="1848" height="1080" key="dock-window-1/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1622152224009" />
     <state x="2184" y="588" width="1848" height="1080" key="dock-window-1/1920.0.2560.1440/72.26.1848.1054@72.26.1848.1054" timestamp="1621793380043" />
     <state x="72" y="0" width="1848" height="1080" key="dock-window-2" timestamp="1621873118649">
       <screen x="72" y="26" width="1848" height="1054" />
@@ -137,22 +121,35 @@
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
     <state x="72" y="0" width="1848" height="1080" key="dock-window-3/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621900999361" />
-    <state x="72" y="0" width="1848" height="1080" key="dock-window-4" timestamp="1621901402534">
-      <screen x="72" y="26" width="1848" height="1054" />
+    <state x="-119" y="47" width="1440" height="876" maximized="true" key="dock-window-4" timestamp="1622047357684">
+      <screen x="72" y="24" width="1368" height="876" />
     </state>
+    <state x="-119" y="47" width="1440" height="876" maximized="true" key="dock-window-4/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1622047357684" />
     <state x="72" y="0" width="1848" height="1080" key="dock-window-4/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621901402534" />
     <state x="1850" y="201" width="620" height="522" key="find.popup" timestamp="1621602651675">
       <screen x="1440" y="0" width="1440" height="900" />
     </state>
     <state x="1850" y="201" width="620" height="522" key="find.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1621602651675" />
-    <state x="2864" y="342" key="run.anything.popup" timestamp="1621697249604">
-      <screen x="1920" y="0" width="2560" height="1440" />
+    <state x="1971" y="214" key="run.anything.popup" timestamp="1622137100263">
+      <screen x="1440" y="0" width="1440" height="900" />
     </state>
+    <state x="1971" y="214" key="run.anything.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1622137100263" />
     <state x="2864" y="342" key="run.anything.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621697249604" />
     <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup" timestamp="1621898646779">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="1823" y="212" width="672" height="678" key="search.everywhere.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1621345139278" />
     <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1621898646779" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/components/LiveCounter.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

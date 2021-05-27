@@ -8,7 +8,7 @@ export class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.setScale(0.2, 0.2);
         this.velocidad=100;
         this.direccion=-1;
-       // this.setSize(,0,0,0);
+        this.body.setSize(300,350).setOffset(200, 100);
         this.scene=scene;
         const a = x - 5;
         this.x = a;
@@ -22,7 +22,6 @@ export class Enemy extends Phaser.Physics.Arcade.Sprite {
             const nextX = Math.floor(this.x / 64) + this.direccion;
             if (nextX < inici) {
                 this.direccion *= -1;
-
             }
             if (nextX > fi) {
                 this.direccion *= -1;

@@ -2,6 +2,7 @@ import { Scene1} from '/js/escenes/scene1.js';
 import { Start} from '/js/escenes/start.js';
 import { Scene2} from '/js/escenes/scene2.js';
 import { GameOver} from '/js/escenes/GameOver.js';
+import { Win} from '/js/escenes/Win.js';
 
 console.log('test');
 
@@ -10,13 +11,13 @@ const config = {
     parent: 'game',
     width: 800,
     heigth: 600,
-    scene: [Start,Scene1,Scene2,GameOver],
+    scene: [Start,Scene1,Scene2,GameOver,Win],
 
     physics: {
         default: 'arcade',
         arcade: {
             gravity: { y: 500 },
-            debug: true,
+            debug: false,
         },
     },
     // scale: {
