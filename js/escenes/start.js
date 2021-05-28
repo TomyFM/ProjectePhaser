@@ -52,6 +52,11 @@ export class Start extends Phaser.Scene {
         musicOff.setInteractive();
         settings.setInteractive();
         startImage.setInteractive();
+        aboutMe.setInteractive();
+
+        aboutMe.on('pointerdown', () => {
+            window.location.href = 'https://github.com/TomyFM/tomyfm.github.io','_blank';
+        });
 
 
         settings.on('pointerdown', () => {
