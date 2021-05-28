@@ -145,6 +145,7 @@ function final ()
 
 function takeclau(player, clau) {
     clau.disableBody(true, true);
+    this.add.image(450 ,10 ,'clau').setOrigin(0, 0).setScrollFactor(0,0);
     this.playerGetKey=true;
 }
 
