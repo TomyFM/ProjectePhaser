@@ -12,6 +12,7 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
 
     update(){
 
+
         if ( this.scene.cursors.left.isDown) {
             this.setVelocityX(-200);
             if (this.body.onFloor()) {

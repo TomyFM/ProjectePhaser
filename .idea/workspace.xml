@@ -4,10 +4,8 @@
     <list default="true" id="92414db1-b30d-4ac3-886e-7f43bfe7e32b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/LiveCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/LiveCounter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/Object.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Object.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/escenes/scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/escenes/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/escenes/Win.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/escenes/Win.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +75,8 @@
       <workItem from="1622121977639" duration="600000" />
       <workItem from="1622125469331" duration="13335000" />
       <workItem from="1622150181018" duration="7861000" />
+      <workItem from="1622214002910" duration="1684000" />
+      <workItem from="1622215717244" duration="22000" />
     </task>
     <servers />
   </component>
@@ -125,16 +125,5 @@
     </state>
     <state x="1823" y="212" width="672" height="678" key="search.everywhere.popup/1440.0.1440.900/72.24.1368.876@1440.0.1440.900" timestamp="1621345139278" />
     <state x="2601" y="339" width="1195" height="1085" key="search.everywhere.popup/1920.0.2560.1440/72.26.1848.1054@1920.0.2560.1440" timestamp="1622157973510" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/components/LiveCounter.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -34,6 +34,7 @@ export class Win extends Phaser.Scene {
 
 
         let record = localStorage.getItem('Points');
+        if (record==null) record=this.score;
         if(this.score>record) localStorage.setItem('Points', this.score);
 
 
